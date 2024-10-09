@@ -1,0 +1,1 @@
+let sum_of_ints l = List.fold_left (+) 0 l
