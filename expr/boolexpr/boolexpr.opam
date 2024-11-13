@@ -13,6 +13,7 @@ bug-reports: "https://github.com/bitbart/lip/issues"
 depends: [
   "ocaml"
   "dune" {>= "3.4"}
+  "menhir"
   "odoc" {with-doc}
 ]
 build: [

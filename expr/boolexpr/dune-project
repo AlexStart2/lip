@@ -19,7 +19,7 @@
  (name boolexpr)
  (synopsis "Interpreter of simple boolean expressions")
  (description "The interpreter implements small-step and big-step semantics of simple boolean expressions")
- (depends ocaml dune)
+ (depends ocaml dune menhir)
  (tags
   (topics "to describe" your project)))
 
