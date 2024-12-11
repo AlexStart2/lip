@@ -27,6 +27,8 @@ let rec print_trace = function
   | x::l -> print_endline (string_of_expr x); print_string " -> " ; print_trace l
 ;;
 
+
+
 let print_type e = try 
     print_endline (string_of_type (typecheck e))
   with TypeError s -> print_endline s

@@ -1,6 +1,5 @@
 open SarithexprLib.Ast
 open SarithexprLib.Main
-open QCheck
 
 (* ################################################
    Helpers for building expr values
@@ -46,7 +45,7 @@ let typechecks e =
   with _ -> false
 
 let progress e =
-  typechecks e ==>
+  typechecks e ==
   (is_value e || can_take_step e)
 
 let preservation e =
